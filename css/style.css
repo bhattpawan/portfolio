@@ -35,7 +35,7 @@ ol {
 
 .container {
   text-align: center;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   padding: 0 1.5rem;
 }
 
@@ -59,16 +59,17 @@ ol {
 .navbar {
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  padding: 1rem;
+  justify-content: center;
+  padding: 2rem;
+  background-color: var(--primary);
+  color: var(--light);
 }
 
 .nav-list {
-  flex: 1;
-  flex-grow: inherit;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .nav-item {
@@ -76,49 +77,29 @@ ol {
 }
 
 .nav-link {
-  color: var(--dark);
-  text-transform: uppercase;
+  color: var(--light);
+  /* text-transform: uppercase; */
   font-weight: bold;
 }
 
 .nav-link:hover {
-  color: var(--primary);
-  transition: color 0.3s ease-in-out;
+  color: var(--dark);
+  transition: color 0.2s ease-in-out;
 }
 
-.nav-link.active {
-  color: var(--primary);
+.hamburger {
+  display: none;
 }
 
 /* Showcase */
 #showcase {
-  margin-top: 10rem;
-  height: 100vh;
+  margin: 1rem;
 }
 
-#showcase h1 {
-  font-size: 2rem;
-  margin: 3rem 0;
-}
-
-#showcase .colored-text {
-  font-size: 3rem;
-}
-
-#showcase h4 {
-  font-size: 2rem;
-  margin-bottom: 5rem;
+#showcase img {
+  max-width: 100%;
 }
 
 /* About */
 
 /* Social Icons */
-.social-icon {
-  font-size: 2rem;
-  color: var(--primary);
-}
-
-.social-icon .github:hover {
-  color: var(--dark);
-  transition: all 0.3s ease-in-out;
-}
