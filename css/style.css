@@ -95,10 +95,10 @@ ol {
   margin-top: 10rem;
   height: 100vh;
 }
-#showcase h1,
-#showcase h2 {
+
+#showcase h1 {
   font-size: 2rem;
-  margin: 1rem 0;
+  margin: 3rem 0;
 }
 
 #showcase .colored-text {
@@ -107,7 +107,7 @@ ol {
 
 #showcase h4 {
   font-size: 2rem;
-  margin-bottom: 2.5rem;
+  margin-bottom: 5rem;
 }
 
 /* About */
