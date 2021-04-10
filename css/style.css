@@ -81,6 +81,7 @@ img {
 .navbar {
   position: fixed;
   width: 100%;
+  top: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -222,7 +223,7 @@ img {
 
 /* project showcase */
 #project-showcase {
-  margin-top: 5rem;
+  margin-top: 8rem;
 }
 
 .projects-grid {
@@ -258,4 +259,8 @@ img {
   margin: 0.5rem 0;
   padding: 0.5rem;
   border-radius: 5px;
+}
+
+#blog-showcase {
+  padding-top: 8rem;
 }
