@@ -14,14 +14,17 @@
 
   .nav-list {
     position: absolute;
-    left: -500px;
+    padding-top: 1rem;
+    left: -300px;
     top: 55px;
-    width: 100%;
+    width: 50%;
+    height: 100vh;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     text-align: center;
     background-color: var(--primary);
+    z-index: 3;
     transition: all 0.5s ease-in-out;
   }
   .nav-item {
@@ -30,5 +33,28 @@
 
   .nav-item:not(:last-child) {
     border-bottom: 1px solid var(--light);
+  }
+
+  /* Showcase */
+  #showcase {
+    height: unset;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 2rem 0;
+  }
+
+  /* About */
+
+  #about .image {
+    display: none;
+  }
+
+  #about .content {
+    text-align: center;
+  }
+
+  #about .content p {
+    text-align: justify;
   }
 }
