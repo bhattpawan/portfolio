@@ -79,6 +79,8 @@ img {
 
 /* Navigation */
 .navbar {
+  position: fixed;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -111,11 +113,6 @@ img {
   transition: color 0.2s ease-in-out;
 }
 
-.hamburger {
-  display: none;
-  cursor: pointer;
-}
-
 /* Showcase */
 #showcase {
   height: 100vh;
@@ -123,6 +120,7 @@ img {
   align-items: center;
   justify-content: flex-start;
   flex-direction: column;
+  padding-top: 5rem;
 }
 
 #showcase img {

@@ -36,6 +36,7 @@
     align-items: center;
     justify-content: flex-start;
     margin: 5rem 0 1rem 0;
+    padding-top: 2rem;
   }
 
   /* About */
@@ -74,6 +75,38 @@
     font-size: 1rem;
     padding-left: 0.4rem;
   }
+  .nav-item {
+    padding: 0 0.3rem;
+  }
+
+  #blog-showcase {
+    margin-top: 3rem;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .social {
+    font-size: 1rem;
+    padding-left: 0.4rem;
+    text-align: center;
+  }
+
+  .contact-form {
+    text-align: center;
+    padding: 4rem;
+  }
+
+  .nav-list {
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .p-2 {
+    padding: 1rem;
+  }
+
   .nav-item {
     padding: 0 0.3rem;
   }
