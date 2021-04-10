@@ -1,38 +1,23 @@
 @media screen and (max-width: 450px) {
   .navbar {
-    position: relative;
-  }
-
-  .hamburger {
-    position: absolute;
-    top: -5px;
-    left: 0;
-    font-size: 2.5rem;
-    padding: 1rem;
-    display: block;
+    position: fixed;
+    top: 0px;
+    width: 100%;
   }
 
   .nav-list {
-    position: absolute;
+    position: fixed;
+    padding: 0;
+    margin: 0;
     padding-top: 1rem;
-    left: -300px;
-    top: 55px;
-    width: 50%;
-    height: 100vh;
-    flex-direction: column;
+    left: 2rem;
+    flex-direction: row;
     justify-content: flex-start;
     align-items: center;
     text-align: center;
-    background-color: var(--primary);
-    z-index: 3;
-    transition: all 0.5s ease-in-out;
   }
   .nav-item {
     padding: 0.5rem;
-  }
-
-  .nav-item:not(:last-child) {
-    border-bottom: 1px solid var(--light);
   }
 
   /* Showcase */
@@ -41,7 +26,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    margin: 2rem 0;
+    margin: 5rem 0 1rem 0;
   }
 
   /* About */
@@ -56,5 +41,17 @@
 
   #about .content p {
     text-align: justify;
+  }
+
+  .project {
+    margin-bottom: 2rem;
+  }
+
+  .p-2 {
+    padding: 1.5rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
   }
 }
