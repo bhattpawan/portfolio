@@ -46,7 +46,7 @@ img {
 
 .home-cards {
   border: 1px solid var(--primary);
-  padding: 2rem;
+  padding: 1.5rem;
   border-radius: 10px;
   margin: 2rem;
 }
@@ -57,13 +57,13 @@ img {
 }
 
 .home-cards p {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   text-align: justify;
   padding: 0 1rem;
 }
 
 .home-cards img {
-  width: 10vw;
+  width: 10%;
   margin: 0 3rem;
 }
 
@@ -93,6 +93,41 @@ img {
   justify-content: center;
 }
 
+.content-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 2rem;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-card {
+  border: 1px solid var(--primary);
+  border-radius: 10px;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.content-card h2 {
+  font-size: 2rem;
+}
+
+.content-card p {
+  font-size: 1.5rem;
+  padding: 1rem 0;
+}
+
+.content-card .button-group {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-card .button-group a {
+  margin: 0 0.5rem;
+}
 /* Navigation */
 
 .navbar {
@@ -101,6 +136,9 @@ img {
   justify-content: space-between;
   background-color: var(--primary);
   padding: 2rem;
+  position: fixed;
+  z-index: 2;
+  width: 100%;
 }
 
 .navbar ul {
@@ -130,7 +168,7 @@ img {
 
 /* Showcase */
 .showcase {
-  padding: 2.5rem 0;
+  padding: 8rem 0 2.5rem 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -145,6 +183,7 @@ img {
 
 .colored-text {
   color: var(--primary);
+  font-size: 4rem;
 }
 
 /* Info Section */
@@ -186,7 +225,44 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: row-reverse;
 }
 
 /* Contact Content */
+.contact-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+.contact-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-links a {
+  font-size: 3rem;
+  color: var(--primary);
+  padding: 0 1.5rem;
+}
+
+.contact-content a:first-of-type {
+  padding-top: 1rem;
+}
+
+#github:hover {
+  color: #131418;
+}
+
+#linkedin:hover {
+  color: #0077b5;
+}
+
+#twitter:hover {
+  color: #55acee;
+}
+
+.social {
+  transition: all 0.3s ease-in-out;
+}
