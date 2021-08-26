@@ -1,104 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/mobile.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="./style.css" />
     <title>Pawan Bhatt</title>
-</head>
-
-<body>
-
-    <!-- Navigation -->
-    <nav class="navbar">
-        <a href="./index.html" id="nav-brand">Pawan Bhatt</a>
-        <ul class="nav-list">
-            <li><a href="./index.html" class="active">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="./projects.html">Projects</a></li>
-            <li><a href="./blogs.html">Blogs</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+  </head>
+  <body>
+    <nav class="navbar flex p-1">
+      <ul class="nav-list flex">
+        <li class="nav-item">
+          <a href="#" class="nav-link">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a href="https://bhattpawan.hashnode.dev" target="_blank" class="nav-link">Blogs</a>
+        </li>
+      </ul>
     </nav>
 
-    <div class="container">
+    <main class="main">
+      <!-- Hero Section -->
+      <section id="hero" class="hero flex p-1">
+        <img src="./assets/hero.png" alt="Header Image" class="hero-image" />
+        <article class="hero-text">
+          <h1 class="hero-header">Pawan Bhatt</h1>
+          <p class="hero-about text-light">Web Developer | Python Developer</p>
+        </article>
+      </section>
 
-        <!-- Showcase -->
-        <section class="showcase">
-            <img src="./images/showcase.jpg" alt="Main Image">
-            <div class="showcase-content">
-                <h1>!! Hello World !!</h1>
-                <h1>This is <span class="colored-text">Pawan Bhatt</span></h1>
-            </div>
-        </section>
-
-        <!-- Info Section -->
-        <div class="info-section">
-            <section class="about home-cards" id="about">
-                <h2>Know Me More...</h2>
-                <div class="about-content">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam aspernatur possimus natus fuga hic atque illo temporibus. Quia similique a eaque voluptates aut aspernatur ipsa fugit atque pariatur. Alias odit, voluptatem blanditiis sequi omnis laudantium facilis? Odit modi quisquam ex illum, ipsa voluptates minima, expedita vero, sint corporis facilis amet?</p>
-                    <img src="./images/intro.png" alt="Introduction">
-
-                </div>
-            </section>
-
-            <section class="skills home-cards">
-                <h2>Skills...</h2>
-                <div class="skill-content">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam aspernatur possimus natus fuga hic atque illo temporibus. Quia similique a eaque voluptates aut aspernatur ipsa fugit atque pariatur. Alias odit, voluptatem blanditiis sequi omnis laudantium facilis? Odit modi quisquam ex illum, ipsa voluptates minima, expedita vero, sint corporis facilis amet?</p>
-                    <img src="./images/skills.png" alt="Skills">
-
-                </div>
-            </section>
-
-            <section class="home-projects home-cards">
-                <h2>Projects...</h2>
-                <div class="content-with-button">
-                    <div class="home-project-content">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nesciunt laborum facilis, delectus sint eum explicabo in ex corrupti molestiae! </p>
-                        <img src="./images/project.png" alt="Projects">
-                    </div>
-                    <a href="./projects.html" target="_blank" class="button">View Projects</a>
-                </div>
-            </section>
-
-
-            <section class="home-projects home-cards">
-                <h2>Blogs...</h2>
-                <div class="content-with-button">
-                    <div class="home-blog-content">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nesciunt laborum facilis, delectus sint eum explicabo in ex corrupti molestiae! </p>
-                        <img src="./images/blog.png" alt="Blogs">
-                    </div>
-                    <a href="./blogs.html" target="_blank" class="button">View Blogs</a>
-                </div>
-            </section>
-
-
-            <section class="home-projects home-cards">
-                <h2>Social Media Presence...</h2>
-                <div class="contact-content" id="contact">
-                    <p>Social Media is what enables one to build connections. Though I am not that active socially, but here I am dropping down the links using which you can reach out to me...</p>
-                    <img src="./images/social.png" alt="">
-                </div>
-                <div class="contact-links">
-                    <a href="#" class="social" target="_blank" id="github"><i class="fab fa-github"></i></a>
-                    <a href="#" class="social" target="_blank" id="twitter"><i class="fab fa-twitter"></i></a>
-                    <a href="#" class="social" target="_blank" id="linkedin"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-            </section>
-
+      <!-- About Section -->
+      <section id="about" class="about bg-light flex p-1">
+        <h2>About</h2>
+        <p class="about-description">Hi, I am Pawan Bhatt. A Computer Science Engineer working as a Python Developer at TCS. I am based out of Pune and currently looking for an entry into Web Development.</p>
+        <p>Find me on:</p>
+        <div class="about-social-links flex">
+          <a href="">LinkedIn</a>
+          <a href="">GitHub</a>
+          <a href="">Twitter</a>
         </div>
+      </section>
 
-    </div>
-
-
-
-</body>
-
+      <!-- Skills -->
+    </main>
+  </body>
 </html>
