@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
     <link rel="stylesheet" href="./style.css" />
     <title>Pawan Bhatt</title>
   </head>
@@ -11,10 +11,10 @@
     <nav class="navbar flex p-1">
       <ul class="nav-list flex">
         <li class="nav-item">
-          <a href="#" class="nav-link">About</a>
+          <a href="#about" class="nav-link">About</a>
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link">Projects</a>
+          <a href="#projects" class="nav-link">Projects</a>
         </li>
         <li class="nav-item">
           <a href="https://bhattpawan.hashnode.dev" target="_blank" class="nav-link">Blogs</a>
@@ -30,6 +30,7 @@
           <h1 class="hero-header">Pawan Bhatt</h1>
           <p class="hero-about text-light">Web Developer | Python Developer</p>
         </article>
+        <a href="#projects" class="btn hero-btn">Show Projects</a>
       </section>
 
       <!-- About Section -->
@@ -38,13 +39,25 @@
         <p class="about-description">Hi, I am Pawan Bhatt. A Computer Science Engineer working as a Python Developer at TCS. I am based out of Pune and currently looking for an entry into Web Development.</p>
         <p>Find me on:</p>
         <div class="about-social-links flex">
-          <a href="">LinkedIn</a>
-          <a href="">GitHub</a>
-          <a href="">Twitter</a>
+          <a href="https://www.linkedin.com/in/bhatt-pawan/" target="_blank">LinkedIn</a>
+          <a href="https://github.com/bhattpawan" target="_blank">GitHub</a>
+          <a href="https://twitter.com/vaayouu" target="_blank">Twitter</a>
         </div>
       </section>
 
       <!-- Skills -->
+      <section id="skills" class="skills flex p-1">
+        <h2>Skills</h2>
+        <section class="skillset">
+          <p><span class="bold">Technologies</span>: Python, JavaScript, HTML, CSS</p>
+          <p><span class="bold">Libraries/Frameworks</span>: Bootstrap</p>
+          <p><span class="bold">Tools</span>: Git, Jira, Jenkins, Control-M</p>
+        </section>
+        <a href="#" class="btn download-btn">Download Resume</a>
+      </section>
+
+      <!-- Projects -->
+      <section id="projects" class="projects"></section>
     </main>
   </body>
 </html>

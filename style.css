@@ -56,7 +56,8 @@ h2 {
 }
 
 .main {
-  margin: 5rem auto;
+  margin: 0 auto;
+  margin-top: 80px;
 }
 
 .btn {
@@ -76,6 +77,10 @@ h2 {
 
 .p-1 {
   padding: 1rem;
+}
+
+.bold {
+  font-weight: bold;
 }
 
 /* Navigation */
@@ -126,6 +131,10 @@ h2 {
   font-weight: bold;
 }
 
+.hero-btn {
+  margin-top: 1rem;
+}
+
 /* About Section */
 
 .about {
@@ -147,6 +156,27 @@ h2 {
   font-weight: bold;
   color: var(--grey);
   font-size: 1.2rem;
+}
+
+/* Skills */
+
+.skills {
+  text-align: justify;
+  flex-direction: column;
+}
+
+.skillset p {
+  padding-top: 1rem;
+}
+
+.download-btn {
+  margin-top: 1rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .hero {
+    height: 50vh;
+  }
 }
 
 @media screen and (max-width: 600px) {
