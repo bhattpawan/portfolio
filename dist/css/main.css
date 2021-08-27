@@ -82,7 +82,8 @@ body {
   line-height: 1.5;
   height: 100vh;
   background: #666;
-  color: #fbfbfb; }
+  color: #fbfbfb;
+  overflow: hidden; }
   body#bg-img {
     background: url("https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
     background-attachment: fixed;
