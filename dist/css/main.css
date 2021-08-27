@@ -75,12 +75,12 @@
 
 html {
   scroll-behavior: smooth;
-  font-size: 62.2%; }
+  font-size: 62.2%;
+  overflow: hidden; }
 
 body {
   font-family: 'Poppins', sans-serif;
   line-height: 1.5;
-  height: 100vh;
   background: #666;
   color: #fbfbfb;
   overflow: hidden; }
@@ -148,4 +148,4 @@ main {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    overflow: hidden; }
+    height: 100vh; }
