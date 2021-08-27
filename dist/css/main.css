@@ -75,18 +75,16 @@
 
 html {
   scroll-behavior: smooth;
-  font-size: 62.2%;
-  overflow: hidden; }
+  font-size: 62.5%; }
 
 body {
   font-family: 'Poppins', sans-serif;
   line-height: 1.5;
   background: #666;
   color: #fbfbfb;
-  overflow: hidden; }
+  position: relative; }
   body#bg-img {
     background: url("https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
-    background-attachment: fixed;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat; }
@@ -95,8 +93,8 @@ body {
       position: absolute;
       top: 0;
       right: 0;
-      width: 100%;
-      height: 100%;
+      width: 100vw;
+      height: 100vh;
       background-color: rgba(38, 38, 38, 0.9);
       z-index: -1; }
 
@@ -110,16 +108,12 @@ a:visited {
 ul {
   list-style-type: none; }
 
-img {
-  width: 100%;
-  height: auto; }
-
 h1,
 h2 {
   font-weight: 400; }
   h1.lg-heading,
   h2.lg-heading {
-    font-size: 8rem; }
+    font-size: 5rem; }
   h1.sm-heading,
   h2.sm-heading {
     margin-bottom: 2rem;
@@ -128,14 +122,14 @@ h2 {
 header {
   position: fixed;
   z-index: 2;
-  width: 100%; }
+  width: 100vw; }
 
 .text-secondary {
   color: #4db6ac; }
 
 main {
   padding: 4rem;
-  height: 100%; }
+  height: 100vh; }
   main .icons {
     margin-top: 1rem; }
     main .icons a {
