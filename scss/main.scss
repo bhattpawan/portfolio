@@ -1,40 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
-$black: #262626;
-$white: #fbfbfb;
-$teal: #4db6ac;
-$light-teal: #e0f2f1;
-$grey: #666;
-$show-home-img: true;
-$home-img: url('https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
-$opacity: 0.9;
-
-@mixin easeOut {
-  transition: all 0.3s ease-out;
-}
-
-@mixin background {
-  @if $show-home-img {
-    &#bg-img {
-      background: $home-img;
-      background-attachment: fixed;
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-
-      &:after {
-        content: '';
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba($grey, $opacity);
-        z-index: -1;
-      }
-    }
-  }
-}
+@import './config';
 
 * {
   margin: 0;
