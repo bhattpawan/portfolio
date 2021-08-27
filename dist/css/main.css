@@ -82,12 +82,12 @@ body {
   line-height: 1.5;
   background: #666;
   color: #fbfbfb;
-  position: relative; }
+  height: 100vh;
+  overflow: hidden; }
   body#bg-img {
     background: url("https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
     background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat; }
+    background-position: center; }
     body#bg-img:after {
       content: '';
       position: absolute;

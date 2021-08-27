@@ -19,7 +19,8 @@ body {
   line-height: 1.5;
   background: $grey;
   color: $white;
-  position: relative;
+  height: 100vh;
+  overflow: hidden;
 }
 
 /* Base Tags */
