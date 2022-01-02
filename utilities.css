@@ -18,18 +18,27 @@ ul.style-type-none {
   list-style-type: none;
 }
 
-/* Background */
-
+/* Backgrounds */
 .bg-primary {
   background-color: var(--primary);
-  color: var(--light);
 }
 
 .bg-primary * {
   color: var(--light);
 }
 
+.bg-dark {
+  background-color: var(--dark);
+}
+
+.bg-dark * {
+  color: var(--light);
+}
+
 /* Font Size */
+.font-sm {
+  font-size: 0.8rem;
+}
 
 /* Flex */
 .flex {
@@ -40,4 +49,27 @@ ul.style-type-none {
 
 .flex-column {
   flex-direction: column;
+}
+
+/* Display */
+.hidden {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+/* Border */
+.border-bottom-left-radius {
+  border-bottom-left-radius: 20px;
+}
+
+.border-bottom-right-radius {
+  border-bottom-right-radius: 20px;
+}
+
+.border-bottom-both {
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }

@@ -15,22 +15,17 @@ body {
   height: 100vh;
 }
 
-/* Utilities */
-
 /* Navbar */
 .navbar {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  background-color: var(--light);
   padding: 0.5rem 1rem;
   position: fixed;
   z-index: 5;
   top: 0;
   left: 0;
   width: 100%;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
 }
 
 .nav-menu {
@@ -70,11 +65,10 @@ body {
     height: 100vh;
     top: 0;
     z-index: -1;
-    background-color: var(--primary);
+    background-color: inherit;
     width: 100%;
     left: 0;
     transform: translateY(-700px);
-    transition: all 0.5s linear;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
   }
