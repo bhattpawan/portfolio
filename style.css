@@ -1,12 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
 
-:root {
-  --dark: #222831;
-  --grey: #393e46;
-  --primary: #00adb5;
-  --light: #eeeeee;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -20,4 +13,62 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
+}
+
+/* Utilities */
+
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0.5rem 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-menu-button {
+  display: none;
+}
+
+.nav-header {
+  font-size: 2rem;
+}
+
+.nav-link {
+  transition: color 0.3s linear;
+}
+
+.nav-link:hover {
+  color: var(--dark);
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar {
+    justify-content: space-between;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    position: absolute;
+    transform: translateY(-200px);
+    transition: transform 0.2s linear;
+  }
+
+  .nav-menu-button.show {
+    display: block;
+    color: var(--primary);
+  }
+
+  .nav-menu.show {
+    transform: translateY(100px);
+    /* top: 8vh; */
+  }
 }

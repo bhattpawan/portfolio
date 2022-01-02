@@ -1,0 +1,39 @@
+:root {
+  --dark: #222831;
+  --grey: #393e46;
+  --primary: #00adb5;
+  --light: #eeeeee;
+}
+
+/* Tag Styles */
+
+a:link,
+a:visited,
+a:active {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+/* Lists */
+ul.style-type-none {
+  list-style-type: none;
+}
+
+/* Background */
+
+.bg-primary {
+  background-color: var(--primary);
+}
+
+/* Font Size */
+
+/* Flex */
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-column {
+  flex-direction: column;
+}
