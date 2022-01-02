@@ -1,7 +1,7 @@
 :root {
   --dark: #222831;
   --grey: #393e46;
-  --primary: #00adb5;
+  --primary: #00695c;
   --light: #eeeeee;
 }
 
@@ -10,7 +10,6 @@
 a:link,
 a:visited,
 a:active {
-  color: var(--primary);
   text-decoration: none;
 }
 
@@ -23,6 +22,11 @@ ul.style-type-none {
 
 .bg-primary {
   background-color: var(--primary);
+  color: var(--light);
+}
+
+.bg-primary * {
+  color: var(--light);
 }
 
 /* Font Size */

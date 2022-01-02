@@ -1,5 +1,6 @@
 const navbarBtn = document.querySelector('.nav-menu-button');
 const navMenu = document.querySelector('.nav-menu');
+const navLinks = document.querySelectorAll('.nav-link');
 
 const toggleNavigation = () => {
   navMenu.classList.toggle('show');
@@ -9,5 +10,9 @@ const toggleNavigation = () => {
     navbarBtn.innerHTML = '<i class="fas fa-bars fa-2x"></i>';
   }
 };
+
+navLinks.forEach((navLink) => {
+  navLink.addEventListener('click', toggleNavigation);
+});
 
 navbarBtn.addEventListener('click', toggleNavigation);

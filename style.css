@@ -22,11 +22,15 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  background-color: var(--light);
   padding: 0.5rem 1rem;
   position: fixed;
+  z-index: 5;
   top: 0;
   left: 0;
   width: 100%;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 .nav-menu {
@@ -46,29 +50,46 @@ body {
   transition: color 0.3s linear;
 }
 
-.nav-link:hover {
-  color: var(--dark);
-}
-
 @media only screen and (max-width: 600px) {
   .navbar {
     justify-content: space-between;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 1rem;
+  }
+
+  .nav-header {
+    font-size: 1.8rem;
   }
 
   .nav-menu {
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     position: absolute;
-    transform: translateY(-200px);
-    transition: transform 0.2s linear;
+    height: 100vh;
+    top: 0;
+    z-index: -1;
+    background-color: var(--primary);
+    width: 100%;
+    left: 0;
+    transform: translateY(-700px);
+    transition: all 0.5s linear;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
   }
 
-  .nav-menu-button.show {
+  .nav-menu-button {
     display: block;
     color: var(--primary);
   }
 
   .nav-menu.show {
-    transform: translateY(100px);
-    /* top: 8vh; */
+    transform: translateY(50px);
+    transition: all 0.2s linear;
+  }
+
+  .nav-link {
+    font-size: 1.5rem;
   }
 }
