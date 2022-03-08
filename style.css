@@ -1,16 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Russo+One:wght@100;300;400;500;700&display=swap');
+
 :root {
-  --mainColor: #eaeaea;
-  --secondaryColor: #fff;
-  --borderColor: #c1c1c1;
-  --mainText: #000;
-  --secondaryText: #4b5156;
+  --primaryColor: #00adb5;
+  --secondaryColor: #393e46;
+  --white: #eeeeee;
+  --dark: #222831;
 }
 
-html,
-body {
-  padding: 0;
+html {
+  scroll-behavior: smooth;
+}
+
+* {
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
+  background-color: var(--dark);
 }
 
 h1,
@@ -19,26 +30,30 @@ h3,
 h4,
 h5,
 h6,
-strong {
-  color: var(--mainText);
-}
-
 p,
-li,
-span,
-label,
-input,
-textarea {
-  color: var(--mainText);
+a {
+  color: var(--white);
 }
 
-.s1,
-.s2 {
-  background-color: var(--mainColor);
-  border-bottom: 1px solid var(--borderColor);
-  overflow: auto;
+a {
+  text-decoration: none;
 }
 
-.s2 {
-  background-color: var(--secondaryColor);
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.heading-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 10rem;
+}
+
+.heading-wrapper h1 {
+  font-size: 3rem;
+  text-align: center;
+  font-family: 'Russo One', sans-serif;
+  font-weight: 100;
 }
