@@ -14,6 +14,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: all 0.3s linear;
 }
 
 body {
@@ -44,21 +45,37 @@ a {
   font-weight: 100;
 }
 
-.container {
-  width: 1200px;
-  margin: 0 auto;
+a {
+  text-decoration: none;
+  color: var(--primaryColor);
+  cursor: pointer;
 }
 
-.greeting-wrapper h1 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 4rem;
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 2rem auto;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 95%;
+  }
+}
+
+.greeting-wrapper {
+  text-align: center;
   min-height: 10rem;
 }
 
+.greeting-wrapper h1 {
+  font-size: 3.5rem;
+}
+
 .dots-wrapper {
-  display: flex;
   padding: 10px;
 }
 
@@ -67,7 +84,7 @@ a {
   width: 15px;
   border-radius: 50%;
   display: inline-block;
-  margin: 5px;
+  margin: 0 5px;
 }
 
 #dot-1 {
@@ -80,4 +97,103 @@ a {
 
 #dot-3 {
   background-color: #2aca3e;
+}
+
+.intro-wrapper {
+  margin: 1.5rem 0;
+  border-radius: 5px;
+  border: 1px solid var(--primaryColor);
+}
+
+.nav-wrapper {
+  background-color: var(--secondaryColor);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.link-wrapper {
+  padding-right: 1rem;
+}
+
+.image-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+#profile {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+}
+
+.left-column {
+  grid-area: left-column;
+  padding: 30px 50px;
+  justify-content: center;
+}
+
+.right-column {
+  grid-area: right-column;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px 50px;
+}
+
+.right-column h2 {
+  padding: 20px 0;
+}
+
+.p-2 {
+  padding: 2rem;
+}
+
+.shadow {
+  box-shadow: -10px -10px 0px 0px var(--primaryColor);
+}
+
+.border {
+  border: 1px solid var(--primaryColor);
+}
+
+.info-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 'left-column right-column';
+}
+
+@media screen and (max-width: 1200px) {
+  .info-wrapper {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    grid-template-areas:
+      'left-column'
+      'right-column';
+  }
+}
+
+.about-wrapper h2 {
+  margin: 2rem 0;
+}
+
+.expertise-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.expertise-wrapper h2 {
+  margin: -2rem 0;
+}
+
+.expertise-wrapper p#about-me {
+  margin: 1.5rem 0;
+}
+
+.skillset-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 10px;
+  background-color: var(--secondaryColor);
 }
