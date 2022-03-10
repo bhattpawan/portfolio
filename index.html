@@ -8,76 +8,58 @@
     <title>Pawan Bhatt</title>
   </head>
   <body>
-    <section class="intro">
-      <div class="container">
-        <div class="greeting-wrapper">
-          <h1>Hi, I'm Pawan Bhatt</h1>
-        </div>
+    <nav class="navbar">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+      </ul>
+    </nav>
 
-        <div class="intro-wrapper">
-          <div class="nav-wrapper">
-            <div class="dots-wrapper">
-              <div id="dot-1" class="dot"></div>
-              <div id="dot-2" class="dot"></div>
-              <div id="dot-3" class="dot"></div>
-            </div>
-            <div class="link-wrapper"><a href="#">Lets Catch Up</a></div>
-          </div>
-          <div class="info-wrapper">
-            <div class="left-column">
-              <div class="image-wrapper">
-                <img src="./images/pic.jpg" alt="Profile" id="profile" />
-              </div>
-            </div>
-            <div class="right-column">
-              <div class="shadow border p-2">
-                <h2>What I do?</h2>
-                <div class="intro-desc">
-                  <p>
-                    I am a developer who primarily uses Python.<br />
-                    Looking for a change in the field of Web Development.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+    <main class="container">
+      <header id="header">
+        <div class="heading-wrapper">
+          <h1>Hi, I'm <span class="highlighted">Pawan Bhatt</span></h1>
+          <h3>
+            A Developer who primarily uses <span class="highlighted">Python</span><br />but also
+            loves
+            <span class="highlighted">JavaScript</span>
+          </h3>
+          <a href="./assets/Resume - Pawan.pdf" class="btn" target="_blank">View Resume</a>
         </div>
-      </div>
-    </section>
+      </header>
+      <section id="about">
+        <section class="about-wrapper">
+          <article class="left-column">
+            <div class="image-wrapper">
+              <img src="./images/pic.jpg" alt="Profile Pic" />
+            </div>
+          </article>
+          <article class="right-column">
+            <div class="info-wrapper">
+              <h2 class="highlighted">About Me</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem sapiente id quo
+                iusto, corporis repellat aut reprehenderit nesciunt nobis voluptatum aliquam, vel
+                inventore consectetur minus quam expedita non voluptates saepe qui omnis quod
+                commodi, nam labore repellendus? Sunt quas dignissimos aut, corporis dolore ipsa
+                sequi eligendi similique in, temporibus delectus.
+              </p>
+            </div>
+          </article>
+        </section>
+      </section>
 
-    <section class="about">
-      <div class="left-column">
-        <div class="about-wrapper">
-          <h2>More About Me</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, natus. Cumque
-            reprehenderit nihil officia perferendis porro! Possimus, placeat dolorem ipsam
-            distinctio totam fugit expedita ad iusto architecto ratione nihil, assumenda pariatur
-            minus omnis asperiores neque, velit sunt vitae. Modi omnis quia aspernatur tempore
-            laboriosam et totam assumenda consequuntur corrupti distinctio!
-          </p>
-        </div>
-      </div>
-      <div class="right-column">
-        <div class="expertise-wrapper">
-          <h2>Top Expertise</h2>
-          <p id="about-me">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis perferendis maiores quod
-            suscipit illo aut.
-          </p>
-          <div class="skillset-wrapper">
-            <div class="left-col">
-              <p>Python</p>
-              <p>JavaScript</p>
-              <p>ReactJS</p>
-            </div>
-            <div class="right-col">
-              <p>HTML</p>
-              <p>CSS</p>
-            </div>
+      <section id="skills">
+        <section class="skill-wrapper">
+          <h2 class="highlighted">Skills</h2>
+          <div class="left-column">
+            <p>HTML</p>
+            <p>CSS</p>
+            <p>JavaScript</p>
           </div>
-        </div>
-      </div>
-    </section>
+          <div class="right-column"></div>
+        </section>
+      </section>
+    </main>
   </body>
 </html>
